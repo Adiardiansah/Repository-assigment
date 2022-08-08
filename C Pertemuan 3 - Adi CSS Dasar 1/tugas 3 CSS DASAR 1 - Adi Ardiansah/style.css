@@ -1,0 +1,27 @@
+h1+h2{
+    color: red;
+}
+
+div h1{
+    color: green;
+}
+
+#main-content h1.biru{
+    color: blue;
+}
+
+#main-content p.abu{
+    color: grey;
+}
+
+div.sub-content h1{
+    color: red;
+}
+
+div.sub-content p{
+    background-color: grey !important;
+}
+
+div#subcontent p{
+    color: aqua;
+}

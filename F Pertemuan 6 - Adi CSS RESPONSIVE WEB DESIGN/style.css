@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1a1a1a;
+	padding: 2rem;
+}
+
+.navbar > div {
+	display: flex;
+}
+
+.navbar > div:first-child {
+	width: 50%;
+	margin-right: 2rem;
+}
+
+.navbar > div:first-child > img {
+	width: 2rem;
+}
+
+.navbar > div:last-child {
+	width: 100%;
+	margin-left: 2rem;
+}
+
+.navbar > div:last-child > input {
+	flex-grow: 1;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+
+.side {
+	width: 50%;
+	padding: 0 2rem;
+}
+
+.side > div {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(59, 49, 48);
+}
+
+.content {
+	width: 100%;
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.content > h1 {
+	margin-bottom: 1rem;
+}
+
+.content > p {
+	margin: 1rem 0;
+}
+
+.img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.img > div {
+	width: 50%;
+}
+
+.img > div:first-child {
+	margin-right: 1rem;
+}
+
+.img > div:last-child {
+	margin-left: 1rem;
+}
+
+.img > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.kotak {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.kotak > .row {
+	width: 50%;
+	display: flex;
+}
+
+.kotak > .row > div {
+	width: 100%;
+	height: 500px;
+	background-color: black;
+	margin: 1rem 1rem 0 1rem;
+}
+
+.kotak > .row:first-child > div:first-child {
+	margin-left: 0;
+}
+
+.kotak > .row:last-child > div:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 768px) {
+	.side {
+		display: none;
+	}
+
+	.kotak {
+		flex-direction: column;
+	}
+
+	.kotak > .row {
+		width: 100%;
+	}
+
+	.kotak > .row > div:first-child {
+		margin-left: 0;
+	}
+
+	.kotak > .row > div:last-child {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 512px) {
+	.navbar {
+		justify-content: center;
+	}
+
+	.navbar > div:first-child {
+		justify-content: center;
+		margin-right: 0;
+	}
+
+	.navbar > div:last-child {
+		display: none;
+	}
+
+	.img {
+		flex-direction: column;
+	}
+
+	.img > div {
+		width: 100%;
+		margin: 1rem 0;
+	}
+
+	.img > div:first-child {
+		margin-right: 0;
+	}
+
+	.img > div:last-child {
+		margin-left: 0;
+	}
+
+	.kotak > .row {
+		flex-direction: column;
+	}
+
+	.kotak > .row > div:first-child {
+		margin-left: 0;
+	}
+
+	.kotak > .row > div:last-child {
+		margin-right: 0;
+	}
+
+	.kotak > .row > div {
+		margin: 1rem 0;
+	}
+}
